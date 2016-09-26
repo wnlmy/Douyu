@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6CE950AA1D94B9B4000BCDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE950A91D94B9B4000BCDED /* AppDelegate.swift */; };
-		6CE950AC1D94B9B4000BCDED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE950AB1D94B9B4000BCDED /* ViewController.swift */; };
 		6CE950AF1D94B9B4000BCDED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE950AD1D94B9B4000BCDED /* Main.storyboard */; };
 		6CE950B11D94B9B4000BCDED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CE950B01D94B9B4000BCDED /* Assets.xcassets */; };
 		6CE950B41D94B9B4000BCDED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE950B21D94B9B4000BCDED /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		6CE950A61D94B9B4000BCDED /* Douyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Douyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE950A91D94B9B4000BCDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6CE950AB1D94B9B4000BCDED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6CE950AE1D94B9B4000BCDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CE950B01D94B9B4000BCDED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CE950B31D94B9B4000BCDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +33,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C97FA031D98BECA002A539E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6C97FA071D98BECA002A539E /* Main */,
+				6C97FA051D98BECA002A539E /* Home */,
+				6C97FA061D98BECA002A539E /* Live */,
+				6C97FA041D98BECA002A539E /* Follow */,
+				6C97FA081D98BECA002A539E /* Profile */,
+				6C97FA091D98BECA002A539E /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6C97FA041D98BECA002A539E /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		6C97FA051D98BECA002A539E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6C97FA061D98BECA002A539E /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		6C97FA071D98BECA002A539E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6C97FA081D98BECA002A539E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6C97FA091D98BECA002A539E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		6CE9509D1D94B9B4000BCDED = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +107,8 @@
 		6CE950A81D94B9B4000BCDED /* Douyu */ = {
 			isa = PBXGroup;
 			children = (
+				6C97FA031D98BECA002A539E /* Classes */,
 				6CE950A91D94B9B4000BCDED /* AppDelegate.swift */,
-				6CE950AB1D94B9B4000BCDED /* ViewController.swift */,
 				6CE950AD1D94B9B4000BCDED /* Main.storyboard */,
 				6CE950B01D94B9B4000BCDED /* Assets.xcassets */,
 				6CE950B21D94B9B4000BCDED /* LaunchScreen.storyboard */,
@@ -135,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CE950AC1D94B9B4000BCDED /* ViewController.swift in Sources */,
 				6CE950AA1D94B9B4000BCDED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +301,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Douyu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lumengyan.Douyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,7 +314,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Douyu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lumengyan.Douyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +342,7 @@
 				6CE950BA1D94B9B4000BCDED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
